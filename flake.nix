@@ -14,17 +14,17 @@
         pname = "pesde";
         version = "0.7.2";
 
-        nativeBuildInputs = [
-          pkgs.autoPatchelfHook
-          pkgs.unzip
+        nativeBuildInputs = with pkgs; [
+          autoPatchelfHook
+          unzip
         ];
 
-        buildInputs = [
-          pkgs.zlib
-          pkgs.openssl_3
-          pkgs.dbus
-          pkgs.libgcc
-        ];
+        buildInputs = with pkgs; [
+          zlib
+          openssl
+          dbus
+          libgcc
+        ];Z
 
         src = pkgs.fetchzip {
           url = "https://github.com/pesde-pkg/pesde/releases/download/v0.7.2%2Bregistry.0.2.3/pesde-0.7.2-linux-x86_64.zip";
