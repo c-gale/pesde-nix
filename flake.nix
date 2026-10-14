@@ -27,8 +27,8 @@
         ];
 
         src = pkgs.fetchzip {
-          url = "https://github.com/pesde-pkg/pesde/releases/download/v0.7.2%2Bregistry.0.2.3/pesde-0.7.2-linux-x86_64.zip";
-          sha256 = "sha256-O0HUfpwQxxDRyhA4LCp/9lmNpEzGh9O5FlljP/llIV8=";
+          url = "https://github.com/pesde-pkg/pesde/releases/download/v0.7.4%2Bregistry.0.2.3/pesde-0.7.4-linux-x86_64.zip";
+          sha256 = "sha256-1h2zl1r33zd37lsm78dkyr649vx0sgq6my5lllnl2ram442z7v37";
         };
 
         installPhase = ''
